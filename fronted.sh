@@ -2,7 +2,7 @@ echo -e "\e[32m installing nginx \e[om"
 sudo dnf install nginx
 
 echo -e "\e[32m copying the repo file into expense.conf"
-cp expens.repo /etc/nginx/default.d/expense.conf
+cp expens.conf /etc/nginx/default.d/expense.conf
 
 echo -e "\e[32m removing default content of nginx \e[0m"
 rm -rf /usr/share/nginx/html/*
